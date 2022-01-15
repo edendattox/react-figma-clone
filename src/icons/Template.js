@@ -18,7 +18,7 @@ export const SvgTemplate = (props) => (
         y="125"
         fill="#fff"
         stroke="#000"
-        stroke-width="2"
+        strokeWidth="2"
         rx="5"
       ></rect>
       <path fill="#0FA958" d="M110 140h85v57h-85z"></path>
@@ -29,7 +29,7 @@ export const SvgTemplate = (props) => (
         y="61"
         fill="#fff"
         stroke="#000"
-        stroke-width="2"
+        strokeWidth="2"
         rx="5"
       ></rect>
       <path fill="#0FA958" d="M66 76h85v57H66z"></path>
@@ -37,7 +37,7 @@ export const SvgTemplate = (props) => (
       <path
         fill="#FFC700"
         stroke="#000"
-        stroke-width="2"
+        strokeWidth="2"
         d="M102 24h68v71h-68z"
       ></path>
       <circle
@@ -46,7 +46,7 @@ export const SvgTemplate = (props) => (
         r="5"
         fill="#fff"
         stroke="#000"
-        stroke-width="2"
+        strokeWidth="2"
       ></circle>
       <circle
         cx="103"
@@ -54,7 +54,7 @@ export const SvgTemplate = (props) => (
         r="5"
         fill="#fff"
         stroke="#000"
-        stroke-width="2"
+        strokeWidth="2"
       ></circle>
       <circle
         cx="170"
@@ -62,7 +62,7 @@ export const SvgTemplate = (props) => (
         r="5"
         fill="#fff"
         stroke="#000"
-        stroke-width="2"
+        strokeWidth="2"
       ></circle>
       <circle
         cx="170"
@@ -70,13 +70,13 @@ export const SvgTemplate = (props) => (
         r="5"
         fill="#fff"
         stroke="#000"
-        stroke-width="2"
+        strokeWidth="2"
       ></circle>
       <path
         fill="#5551FF"
         stroke="#000"
-        stroke-linecap="square"
-        stroke-width="2"
+        strokeLinecap="square"
+        strokeWidth="2"
         d="M128.2 102.2l.5 2.6 1.4-2.3 6-10.4 11.2-3.1 2.2-.7-2-1.2-23-14-1.9-1.1.4 2.2 5.2 28z"
       ></path>
     </g>

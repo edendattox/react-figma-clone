@@ -11,6 +11,19 @@ module.exports = {
       extrabold: 800,
       xl: 900,
     },
+    screens: {
+      xl: { max: "1279px" },
+      // => @media (max-width: 1279px) { ... }
+
+      lg: { max: "1023px" },
+      // => @media (max-width: 1023px) { ... }
+
+      md: { max: "767px" },
+      // => @media (max-width: 767px) { ... }
+
+      small: { max: "639px" },
+      // => @media (max-width: 639px) { ... }
+    },
     fontSize: {
       xs: "16px",
       xsx: "18px",

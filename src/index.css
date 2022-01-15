@@ -33,7 +33,7 @@ code {
   }
 
   .navbar-div-lg {
-    @apply flex flex-col p-[16px] justify-center  border-[3px] h-[270px] w-[300px] text-left border-black border-r-0 border-l-0;
+    @apply flex flex-col p-[16px] justify-center border-[3px] h-[270px] w-[300px] text-left border-black border-r-0 border-l-0;
   }
   .navbar-div-sm {
     @apply flex flex-col py-[20px] gap-y-6 px-[18px] font-xl border-[3px] text-left border-black  h-[270px] w-[180px] border-r-0;
@@ -44,11 +44,11 @@ code {
   }
 
   .navbar-com {
-    @apply absolute bg-white flex z-50 gap-x-5  top-9 h-[280px] w-[800px] left-[-25rem] justify-around border-[3px] border-black cursor-pointer;
+    @apply absolute bg-white flex z-50 gap-x-5 top-9 h-[280px] w-[800px] left-[-25rem] justify-around border-[3px] border-black cursor-pointer;
   }
 
   .navbar-company {
-    @apply absolute bg-white flex flex-col z-50 top-9 p-[17px] justify-between left-[-1rem] h-[210px] w-[140px] text-left border-[3px] border-black cursor-pointer;
+    @apply absolute bg-white flex flex-col z-50 top-7 p-[17px] justify-between left-[-1rem] h-[210px] w-[140px] text-left border-[3px] border-black cursor-pointer;
   }
 }
 
