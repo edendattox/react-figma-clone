@@ -26,3 +26,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@layer components {
+  .navbar-div {
+    @apply absolute flex items-center z-50 justify-center top-8 left-[-12rem]  h-[270px] w-[458px] border-[3px] border-black cursor-pointer;
+  }
+
+  .navbar-div-lg {
+    @apply flex flex-col p-[16px] justify-center  border-[3px] h-[270px] w-[300px] text-left border-black border-r-0 border-l-0;
+  }
+  .navbar-div-sm {
+    @apply flex flex-col py-[20px] gap-y-6 px-[18px] font-xl border-[3px] text-left border-black  h-[270px] w-[180px] border-r-0;
+  }
+
+  .navbar-ent {
+    @apply absolute flex flex-col z-50 top-8 p-[17px] justify-between left-[-1rem] h-[170px] w-[168px] text-left border-[3px] border-black cursor-pointer;
+  }
+}
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(rgb(255, 255, 255), #fff);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease-in-out;
+}
+
+.link-underline-black {
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(rgb(0, 0, 0), rgb(5, 5, 5));
+}
+
+.link-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%;
+}

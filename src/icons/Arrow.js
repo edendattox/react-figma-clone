@@ -8,7 +8,6 @@ export const SvgArrow = (props) => (
     width="1em"
     height="1em"
     {...props}
-    class="figma-1vkg3ei"
   >
     <path d="M4 6L0.535898 0L7.4641 0L4 6Z" fill="currentColor"></path>
   </svg>
