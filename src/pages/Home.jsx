@@ -1,3 +1,9 @@
+import { Header } from "../components/Header";
+
 export const Home = () => {
-  return <div className="relative ">Home</div>;
+  return (
+    <div className="pt-[70px] pb-[70px]">
+      <Header />
+    </div>
+  );
 };

@@ -27,28 +27,19 @@ export const EnterpriseBox = ({
       }}
     >
       <Link to="/overview">
-        <a
-          href="/overview"
-          className="link link-underline link-underline-black text-black font-[12px]"
-        >
+        <div className="link link-underline link-underline-black text-black font-[12px]">
           Overview
-        </a>
+        </div>
       </Link>
       <Link to="customers">
-        <a
-          href="/customers"
-          className="link link-underline link-underline-black text-black font-[12px]"
-        >
+        <div className="link link-underline link-underline-black text-black font-[12px]">
           Customers
-        </a>
+        </div>
       </Link>
       <Link to="contact-sales">
-        <a
-          href="/overview"
-          className="link link-underline link-underline-black text-black font-[12px]"
-        >
+        <div className="link link-underline link-underline-black text-black font-[12px]">
           Contact Sales
-        </a>
+        </div>
       </Link>
     </div>
   );

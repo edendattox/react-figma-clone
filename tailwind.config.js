@@ -12,7 +12,8 @@ module.exports = {
       xl: 900,
     },
     fontSize: {
-      xs: "18px",
+      xs: "16px",
+      xsx: "18px",
       sm: "22px",
       tiny: "20px",
       base: "36px",

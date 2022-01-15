@@ -23,10 +23,10 @@ export const ProductBox = ({ product, isOpenProduct, setIsOpenProduct }) => {
       }}
     >
       <div className="navbar-div-lg link link-underline link-underline-black   gap-y-[8px] ">
-        <h3 className="font-medium text-xs font-roboto tracking-wider">
+        <h3 className="link link-underline link-underline-black font-medium text-xs font-roboto tracking-wider">
           Introducing FigJam
         </h3>
-        <p className="link text-[12px] link-underline link-underline-black text-slate-500">
+        <p className="text-[12px] text-slate-500">
           An online whiteboard for teams
         </p>
         <img
@@ -37,36 +37,24 @@ export const ProductBox = ({ product, isOpenProduct, setIsOpenProduct }) => {
       </div>
       <div className="navbar-div-sm text-[16px] ">
         <Link to="/design">
-          <a
-            href="/design"
-            className="link link-underline link-underline-black text-black font-[12px]"
-          >
+          <div className="link link-underline link-underline-black text-black font-[12px]">
             Design
-          </a>
+          </div>
         </Link>
         <Link to="/prototyping">
-          <a
-            href="/prototyping"
-            className="link link-underline link-underline-black text-black"
-          >
+          <div className="link link-underline link-underline-black text-black">
             Prototyping
-          </a>
+          </div>
         </Link>
         <Link to="/features">
-          <a
-            href="/design-systems"
-            className="link link-underline link-underline-black text-black"
-          >
+          <div className="link link-underline link-underline-black text-black">
             Design systems
-          </a>
+          </div>
         </Link>
         <Link to="/features">
-          <a
-            href="/downloads"
-            className="link link-underline link-underline-black text-black"
-          >
+          <div className="link link-underline link-underline-black text-black">
             Downloads
-          </a>
+          </div>
         </Link>
       </div>
     </div>

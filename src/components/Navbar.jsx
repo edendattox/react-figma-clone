@@ -4,23 +4,33 @@ import { SvgArrow as Arrow } from "../icons/Arrow.js";
 import { Link } from "react-router-dom";
 import { ProductBox } from "./ProductBox.jsx";
 import { EnterpriseBox } from "./EnterpriseBox.jsx";
+import { CommunityBox } from "./CommunityBox.jsx";
+import { CompanyBox } from "./CompanyBox.jsx";
 
 export const Navbar = () => {
+  // product
   const [product, setProducts] = useState(false);
   const [isOpenProduct, setIsOpenProduct] = useState(false);
+  // enterprise
   const [enterprise, setEnterprise] = useState(false);
   const [isOpenEnterprise, setIsOpenEnterprise] = useState(false);
+  // community
+  const [community, setCommunity] = useState(false);
+  const [isOpenCommunity, setIsOpenCommunity] = useState(false);
+  // company
+  const [company, setCompany] = useState(false);
+  const [isOpenCompany, setIsOpenCompany] = useState(false);
 
   return (
-    <nav className="flex px-14 py-7 flex-1 justify-between">
+    <nav className="flex px-12 py-6 flex-1 justify-between">
       <Link to="/">
         <div className="cursor-pointer">
           <Logo width="42" height="60" />
         </div>
       </Link>
-      <div className="flex gap-x-[30px] items-center cursor-pointer">
+      <div className="flex gap-x-[20px] items-center cursor-pointer">
         <div
-          className="relative flex items-center gap-x-[8px] text-xs font-xl font-abel tracking-wide"
+          className="relative flex p-2 items-center gap-x-[8px] text-xs font-xl font-abel tracking-wide"
           onMouseEnter={(e) => {
             setProducts(!product);
             setIsOpenProduct(!isOpenProduct);
@@ -44,7 +54,7 @@ export const Navbar = () => {
           )}
         </div>
         <div
-          className="relative flex text-xs gap-x-[8px] font-xl font-abel tracking-wide"
+          className="relative flex p-2 text-xs gap-x-[8px] font-xl font-abel tracking-wide"
           onMouseEnter={(e) => {
             setEnterprise(!enterprise);
             setIsOpenEnterprise(!isOpenEnterprise);
@@ -67,20 +77,56 @@ export const Navbar = () => {
             />
           )}
         </div>
-        <div className="text-xs font-xl font-abel tracking-wide link link-underline link-underline-black text-black ">
+        <div className="text-xs font-xl p-2 font-abel tracking-wide link link-underline link-underline-black text-black ">
           Pricing
         </div>
-        <div className="flex text-xs gap-x-[8px] font-xl font-abel tracking-wide  ">
+        <div
+          className="relative flex text-xs p-2 gap-x-[8px] font-xl font-abel tracking-wide"
+          onMouseEnter={(e) => {
+            setCommunity(!community);
+            setIsOpenCommunity(!isOpenCommunity);
+          }}
+          onMouseLeave={(e) => {
+            setCommunity(!community);
+            setIsOpenCommunity(!isOpenCommunity);
+          }}
+        >
           Community
           <div className="flex items-center ">
             <Arrow height="6" width="8" />
           </div>
+          {isOpenCommunity && (
+            <CommunityBox
+              community={community}
+              setCommunity={setCommunity}
+              isOpenCommunity={isOpenCommunity}
+              setIsOpenCommunity={setIsOpenCommunity}
+            />
+          )}
         </div>
-        <div className="flex text-xs gap-x-[8px] font-xl font-abel tracking-wide ">
+        <div
+          className="relative flex text-xs  gap-x-[8px] font-xl font-abel tracking-wide"
+          onMouseEnter={(e) => {
+            setCompany(!company);
+            setIsOpenCompany(!isOpenCompany);
+          }}
+          onMouseLeave={(e) => {
+            setCompany(!company);
+            setIsOpenCompany(!isOpenCompany);
+          }}
+        >
           Company
           <div className="flex items-center ">
             <Arrow height="6" width="8" />
           </div>
+          {isOpenCompany && (
+            <CompanyBox
+              company={company}
+              setCompany={setCompany}
+              isOpenCompany={isOpenCompany}
+              setIsOpenCompany={setIsOpenCompany}
+            />
+          )}
         </div>
         <div
           className="text-xs font-xl font-abel tracking-wide  
