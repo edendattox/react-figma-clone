@@ -2,6 +2,7 @@ import { useState } from "react";
 import { SvgLogo as Logo } from "../icons/Logo.js";
 import { SvgArrow as Arrow } from "../icons/Arrow.js";
 import { SvgMenu as Menu } from "../icons/Menu.js";
+import { SvgCross as Cross } from "../icons/Cross.js";
 import { Link } from "react-router-dom";
 import { ProductBox } from "./ProductBox.jsx";
 import { EnterpriseBox } from "./EnterpriseBox.jsx";
@@ -9,7 +10,7 @@ import { CommunityBox } from "./CommunityBox.jsx";
 import { CompanyBox } from "./CompanyBox.jsx";
 import { useMediaQuery } from "react-responsive";
 
-export const Navbar = () => {
+export const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
   // product
   const [product, setProducts] = useState(false);
   const [isOpenProduct, setIsOpenProduct] = useState(false);
@@ -23,7 +24,7 @@ export const Navbar = () => {
   const [company, setCompany] = useState(false);
   const [isOpenCompany, setIsOpenCompany] = useState(false);
 
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 965px" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 980px" });
 
   return (
     <nav className="flex px-12 py-6 flex-1 justify-between">
@@ -98,7 +99,7 @@ export const Navbar = () => {
             }}
           >
             Community
-            <div className="flex items-center ">
+            <div className="flex items-center">
               <Arrow height="6" width="8" />
             </div>
             {isOpenCommunity && (
@@ -159,7 +160,9 @@ export const Navbar = () => {
           >
             Sign up
           </button>
-          <Menu />
+          <div onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {isMenuOpen ? <Cross /> : <Menu />}
+          </div>
         </div>
       )}
     </nav>

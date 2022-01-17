@@ -18,6 +18,8 @@ module.exports = {
       lg: { max: "1023px" },
       // => @media (max-width: 1023px) { ... }
 
+      mdl: { max: "800px" },
+
       md: { max: "767px" },
       // => @media (max-width: 767px) { ... }
 

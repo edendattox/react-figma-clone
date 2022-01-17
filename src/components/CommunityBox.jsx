@@ -48,16 +48,24 @@ export const CommunityBox = ({
       </div>
       <div className="flex flex-col border-[3px] p-5 text-left gap-y-4 h-[276px] border-black border-r-0 border-t-0 border-b-0 ">
         <Link to="/events-livestreams">
-          <div className="">Events and livestreams</div>
+          <div className="link link-underline link-underline-black">
+            Events and livestreams
+          </div>
         </Link>
         <Link to="/best-practices">
-          <div>Best practices</div>
+          <div className="link link-underline link-underline-black">
+            Best practices
+          </div>
         </Link>
         <Link to="/education-program">
-          <div>Education program</div>
+          <div className="link link-underline link-underline-black">
+            Education program
+          </div>
         </Link>
         <Link to="/user-groups">
-          <div>User groups</div>
+          <div className="link link-underline link-underline-black">
+            User groups
+          </div>
         </Link>
       </div>
     </div>

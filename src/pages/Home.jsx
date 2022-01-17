@@ -1,9 +1,11 @@
+import { Gallery } from "../components/Gallery";
 import { Header } from "../components/Header";
 
 export const Home = () => {
   return (
-    <div className="pt-[70px] pb-[70px]">
+    <div>
       <Header />
+      <Gallery />
     </div>
   );
 };

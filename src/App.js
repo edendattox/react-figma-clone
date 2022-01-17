@@ -2,14 +2,24 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Navbar } from "./components/Navbar";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
+import { SideBar } from "./components/SideBar";
+import { useMediaQuery } from "react-responsive";
 
 function App() {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 980px" });
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div className="App">
       <Router>
         <Fragment>
-          <Navbar />
+          {isMenuOpen && isTabletOrMobile ? (
+            <SideBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+          ) : (
+            <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+          )}
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
