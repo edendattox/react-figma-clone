@@ -20,10 +20,10 @@ module.exports = {
 
       mdl: { max: "800px" },
 
-      md: { max: "767px" },
+      mdlg: { max: "960px" },
       // => @media (max-width: 767px) { ... }
 
-      small: { max: "639px" },
+      small: { max: "700px" },
       // => @media (max-width: 639px) { ... }
     },
     fontSize: {

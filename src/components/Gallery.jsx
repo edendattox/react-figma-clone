@@ -6,7 +6,7 @@ export const Gallery = () => {
   const DataGallery = data.map((item) => {
     const title = item.name.toLowerCase().replace(" ", "-");
     return (
-      <Link to={`https://www.figma.com/templates/${title}`}>
+      <Link to={`https://www.figma.com/templates/${title}`} key={item.id}>
         <div className="flex flex-col gap-y-[20px] text-left">
           <div className=" mb-[11px]">
             <img src={item.img} alt="#" />

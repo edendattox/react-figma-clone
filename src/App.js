@@ -7,9 +7,8 @@ import { SideBar } from "./components/SideBar";
 import { useMediaQuery } from "react-responsive";
 
 function App() {
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 980px" });
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 980px" });
 
   return (
     <div className="App">

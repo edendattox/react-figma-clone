@@ -71,3 +71,12 @@ code {
   background-size: 100% 3px;
   background-position: 0 100%;
 }
+
+@media (max-width: 960px) {
+  .social-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 / -1;
+  }
+}
