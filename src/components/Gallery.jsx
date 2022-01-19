@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { data } from "../lib/data";
 
 export const Gallery = () => {
   const DataGallery = data.map((item) => {
-    const title = item.name.toLowerCase().replace(" ", "-");
+    const title = item.name.toLowerCase().replaceAll(" ", "-");
     return (
-      <Link to={`https://www.figma.com/templates/${title}`} key={item.id}>
+      <a href={`https://figma.com/templates/${title}`} key={item.id}>
         <div className="flex flex-col gap-y-[20px] text-left">
           <div className=" mb-[11px]">
             <img src={item.img} alt="#" />
@@ -25,7 +24,7 @@ export const Gallery = () => {
             </p>
           </div>
         </div>
-      </Link>
+      </a>
     );
   });
 
