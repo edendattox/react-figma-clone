@@ -22,7 +22,7 @@ export const Signup = () => {
                 </span>
                 Continue with Google
               </button>
-              <span className="block h-[60px] w-[100%] leading-[60px] text-[16px] text-[#666] ">
+              <span className="block h-[60px] w-[100%] leading-[60px] text-[16px] text-[#666] text-center">
                 or
               </span>
               <input
