@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { SvgCross as Cross } from "../icons/Cross";
 import { SvgLogo as Logo } from "../icons/Logo";
 import { SvgArrow as Arrow } from "../icons/Arrow.js";
+import { ProductsMenu } from "./ProductsMenu";
+import { EnterpriseMenu } from "./EnterpriseMenu";
+// import { useOutsideClick } from "../customHooks/useOutsideClick";
 
 export const SideBar = ({ isMenuOpen, setIsMenuOpen }) => {
+  // const product = useRef();
+  // const enterprise = useRef();
+
+  const [isProductOpen, setIsProductOpen] = useState(false);
+  const [isEnterpriseOpen, setIsEnterpriseOpen] = useState(false);
+
+  // useOutsideClick(product, () => {
+  //   setIsProductOpen(!isProductOpen);
+  // });
+  // useOutsideClick(enterprise, () => {
+  //   setIsEnterpriseOpen(false);
+  // });
+
   return (
     <div className="fixed py-[24px] px-[32px] z-50 overflow-y-auto w-screen bg-white h-screen">
       <div className="flex flex-1 justify-between items-center">
@@ -22,6 +38,7 @@ export const SideBar = ({ isMenuOpen, setIsMenuOpen }) => {
           <div
             className="flex text-xs p-2 gap-x-[8px] font-xl font-abel tracking-wide 
             mt-[0px] mr-[0px] mb-[6px] ml-[-10px]"
+            onClick={() => setIsProductOpen(!isProductOpen)}
           >
             Products
             <div className="flex items-center">
@@ -29,10 +46,12 @@ export const SideBar = ({ isMenuOpen, setIsMenuOpen }) => {
             </div>
           </div>
         </div>
+        {isProductOpen && <ProductsMenu />}
         <div className="relative flex">
           <div
             className="flex text-xs p-2 gap-x-[8px] font-xl font-abel tracking-wide 
             mt-[0px] mr-[0px] mb-[6px] ml-[-10px]"
+            onClick={() => setIsEnterpriseOpen(!isEnterpriseOpen)}
           >
             Enterprise
             <div className="flex items-center">
@@ -40,6 +59,7 @@ export const SideBar = ({ isMenuOpen, setIsMenuOpen }) => {
             </div>
           </div>
         </div>
+        {isEnterpriseOpen && <EnterpriseMenu />}
         <div
           className="flex items-start text-xs font-xl font-abel tracking-wide  
         link link-underline link-underline-black text-black py-[6px]"
