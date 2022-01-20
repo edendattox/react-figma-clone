@@ -12,7 +12,7 @@ export const ExploreFooter = () => {
           to="/"
           className="text-[14px] leading-[1.5] tracking-wider whitespace-nowrap mb-[16px] text-[#282828]
         hover:underline underline-offset-1
-        "
+       small:whitespace-normal "
         >
           Design features
         </Link>
@@ -20,7 +20,7 @@ export const ExploreFooter = () => {
           to="/"
           className="text-[14px] leading-[1.5] tracking-wider whitespace-nowrap mb-[16px] text-[#282828]
         hover:underline underline-offset-1
-        "
+       small:whitespace-normal "
         >
           Prototyping features
         </Link>
@@ -28,7 +28,7 @@ export const ExploreFooter = () => {
           to="/"
           className="text-[14px] leading-[1.5] tracking-wider whitespace-nowrap mb-[16px] text-[#282828]
         hover:underline underline-offset-1
-        "
+       small:whitespace-normal "
         >
           Design systems features
         </Link>
@@ -36,7 +36,7 @@ export const ExploreFooter = () => {
           to="/"
           className="text-[14px] leading-[1.5] tracking-wider whitespace-nowrap mb-[16px] text-[#282828]
         hover:underline underline-offset-1
-        "
+       small:whitespace-normal "
         >
           Collaboration features
         </Link>
@@ -44,7 +44,7 @@ export const ExploreFooter = () => {
           to="/"
           className="text-[14px] leading-[1.5] tracking-wider whitespace-nowrap mb-[16px] text-[#282828]
         hover:underline underline-offset-1
-        "
+       small:whitespace-normal "
         >
           Design process
         </Link>
@@ -52,7 +52,7 @@ export const ExploreFooter = () => {
           to="/"
           className="text-[14px] leading-[1.5] tracking-wider whitespace-nowrap mb-[16px] text-[#282828]
         hover:underline underline-offset-1
-        "
+       small:whitespace-normal "
         >
           FigJam
         </Link>
@@ -60,7 +60,7 @@ export const ExploreFooter = () => {
           to="/"
           className="text-[14px] leading-[1.5] tracking-wider whitespace-nowrap mb-[16px] text-[#282828]
         hover:underline underline-offset-1
-        "
+       small:whitespace-normal "
         >
           Pricing
         </Link>
@@ -68,7 +68,7 @@ export const ExploreFooter = () => {
           to="/"
           className="text-[14px] leading-[1.5] tracking-wider whitespace-nowrap mb-[16px] text-[#282828]
         hover:underline underline-offset-1
-        "
+       small:whitespace-normal "
         >
           Figma Organization
         </Link>
@@ -76,7 +76,7 @@ export const ExploreFooter = () => {
           to="/"
           className="text-[14px] leading-[1.5] tracking-wider whitespace-nowrap mb-[16px] text-[#282828]
         hover:underline underline-offset-1
-        "
+       small:whitespace-normal "
         >
           Customers
         </Link>
@@ -84,7 +84,7 @@ export const ExploreFooter = () => {
           to="/"
           className="text-[14px] leading-[1.5] tracking-wider whitespace-nowrap mb-[16px] text-[#282828]
         hover:underline underline-offset-1
-        "
+       small:whitespace-normal "
         >
           Security
         </Link>
@@ -92,7 +92,7 @@ export const ExploreFooter = () => {
           to="/"
           className="text-[14px] leading-[1.5] tracking-wider whitespace-nowrap mb-[16px] text-[#282828]
         hover:underline underline-offset-1
-        "
+       small:whitespace-normal "
         >
           Integrations
         </Link>
@@ -100,7 +100,7 @@ export const ExploreFooter = () => {
           to="/"
           className="text-[14px] leading-[1.5] tracking-wider whitespace-nowrap mb-[16px] text-[#282828]
         hover:underline underline-offset-1
-        "
+       small:whitespace-normal "
         >
           Contact
         </Link>

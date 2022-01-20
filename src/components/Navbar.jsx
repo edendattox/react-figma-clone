@@ -25,12 +25,16 @@ export const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
   const [isOpenCompany, setIsOpenCompany] = useState(false);
 
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 980px" });
+  const isMobile = useMediaQuery({ query: "(max-width: 600px" });
 
   return (
-    <nav className="flex px-12 py-6 flex-1 justify-between">
+    <nav className="flex px-8 py-6 flex-1 justify-between items-center small:w-screen ">
       <Link to="/">
         <div className="cursor-pointer">
-          <Logo width="42" height="60" />
+          <Logo
+            width={!isMobile ? "42" : "26"}
+            height={!isMobile ? "60" : "34"}
+          />
         </div>
       </Link>
 
@@ -156,7 +160,9 @@ export const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
         <div className="flex items-center font-bold gap-x-5 ">
           <button
             type="button"
-            className="px-[1.6rem] py-[.8rem] text-xs font-bold font-roboto bg-black text-white rounded-[10px] tracking-widest  transition-all duration-200 hover:translate-y-[-.150rem] ease-linear"
+            className="px-[1.6rem] py-[.8rem] text-xs font-bold font-roboto bg-black text-white rounded-[10px] tracking-widest  transition-all duration-200 hover:translate-y-[-.150rem] ease-linear
+            small:text-[16px]
+            "
           >
             Sign up
           </button>

@@ -12,7 +12,7 @@ export const CompareFooter = () => {
           to="/"
           className="text-[14px] leading-[1.5] tracking-wider whitespace-nowrap mb-[16px] text-[#282828]
             hover:underline underline-offset-1
-            "
+       small:whitespace-normal "
         >
           Sketch
         </Link>
@@ -20,7 +20,7 @@ export const CompareFooter = () => {
           to="/"
           className="text-[14px] leading-[1.5] tracking-wider whitespace-nowrap mb-[16px] text-[#282828]
             hover:underline underline-offset-1
-            "
+       small:whitespace-normal "
         >
           Adobe XD
         </Link>
@@ -28,7 +28,7 @@ export const CompareFooter = () => {
           to="/"
           className="text-[14px] leading-[1.5] tracking-wider whitespace-nowrap mb-[16px] text-[#282828]
             hover:underline underline-offset-1
-            "
+       small:whitespace-normal "
         >
           Invision Studio
         </Link>
@@ -36,7 +36,7 @@ export const CompareFooter = () => {
           to="/"
           className="text-[14px] leading-[1.5] tracking-wider whitespace-nowrap mb-[16px] text-[#282828]
             hover:underline underline-offset-1
-            "
+       small:whitespace-normal "
         >
           Framer
         </Link>
@@ -44,7 +44,7 @@ export const CompareFooter = () => {
           to="/"
           className="text-[14px] leading-[1.5] tracking-wider whitespace-nowrap mb-[16px] text-[#282828]
             hover:underline underline-offset-1
-            "
+       small:whitespace-normal "
         >
           Design on Windows
         </Link>
@@ -52,7 +52,7 @@ export const CompareFooter = () => {
           to="/"
           className="text-[14px] leading-[1.5] tracking-wider whitespace-nowrap mb-[16px] text-[#282828]
             hover:underline underline-offset-1
-            "
+       small:whitespace-normal "
         >
           Miro
         </Link>
